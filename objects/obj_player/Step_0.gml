@@ -2,9 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 54E2BAAB
 /// @DnDComment : original (no gamepad support) method$(13_10)$(13_10)1 would be pressing right$(13_10)-1 would be pressing left $(13_10)0 would be no input
-/// @DnDArgument : "expr" "keyboard_check(vk_right)-keyboard_vk_left"
+/// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right)-keyboard_vk_left;
+move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -16,8 +16,8 @@ move_x = move_x*walk_speed;
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
 /// @DnDHash : 39CDD3CE
-/// @DnDArgument : "msg" ""debug message"move_x"
-show_debug_message(string("debug message"move_x));
+/// @DnDArgument : "msg" "move_x"
+show_debug_message(string(move_x));
 
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
@@ -62,21 +62,20 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	if(move_y < 10){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 6F54D55C
-		/// @DnDComment : add gravity 
+		/// @DnDComment : add gravity
 		/// @DnDParent : 38BBB1B5
 		/// @DnDArgument : "expr" "1"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "move_y"
-		move_y += 1;}
+		move_y += 1;}}
 
-	/// @DnDAction : YoYo Games.Movement.move_and_collide
-	/// @DnDVersion : 1
-	/// @DnDHash : 4FC77E39
-	/// @DnDParent : 029A3EF8
-	/// @DnDArgument : "xvel" "move_x"
-	/// @DnDArgument : "yvel" "move_y"
-	/// @DnDArgument : "maxxmove" "walk_speed"
-	/// @DnDArgument : "maxymove" "jump_speed"
-	/// @DnDArgument : "object" "obj_floor"
-	/// @DnDSaveInfo : "object" "obj_floor"
-	move_and_collide(move_x, move_y, obj_floor,4,0,0,walk_speed,jump_speed);}
+/// @DnDAction : YoYo Games.Movement.move_and_collide
+/// @DnDVersion : 1
+/// @DnDHash : 4FC77E39
+/// @DnDArgument : "xvel" "move_x"
+/// @DnDArgument : "yvel" "move_y"
+/// @DnDArgument : "maxxmove" "walk_speed"
+/// @DnDArgument : "maxymove" "jump_speed"
+/// @DnDArgument : "object" "obj_floor"
+/// @DnDSaveInfo : "object" "obj_floor"
+move_and_collide(move_x, move_y, obj_floor,4,0,0,walk_speed,jump_speed);
