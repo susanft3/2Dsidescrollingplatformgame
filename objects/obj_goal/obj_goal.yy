@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_floor",
-  "eventList":[],
+  "%Name":"obj_goal",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_floor",
+  "name":"obj_goal",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+    "name":"spr_goal",
+    "path":"sprites/spr_goal/spr_goal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

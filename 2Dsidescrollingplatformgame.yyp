@@ -36,12 +36,16 @@
   "name":"2Dsidescrollingplatformgame",
   "resources":[
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
-    {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
+    {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_high_jump_powerup","path":"objects/obj_high_jump_powerup/obj_high_jump_powerup.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
-    {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
+    {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
+    {"id":{"name":"spr_enemy_jump","path":"sprites/spr_enemy_jump/spr_enemy_jump.yy",},},
+    {"id":{"name":"spr_enemy_walk","path":"sprites/spr_enemy_walk/spr_enemy_walk.yy",},},
+    {"id":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},},
     {"id":{"name":"spr_high_jump_powerup","path":"sprites/spr_high_jump_powerup/spr_high_jump_powerup.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
@@ -53,6 +57,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
