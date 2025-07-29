@@ -2,16 +2,18 @@
 /// @DnDVersion : 1
 /// @DnDHash : 54E2BAAB
 /// @DnDComment : original (no gamepad support) method$(13_10)$(13_10)1 would be pressing right$(13_10)-1 would be pressing left $(13_10)0 would be no input
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
+
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 76B7B087
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "move_x*walk_speed"
 /// @DnDArgument : "var" "move_x"
-move_x = move_x*walk_speed;
+
 
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
@@ -38,14 +40,15 @@ var l1561A01B_0 = instance_place(x + 0, y + 2, [collission_tilemap]);if ((l1561
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
 	/// @DnDHash : 3AC52CAF
+	/// @DnDDisabled : 1
 	/// @DnDParent : 1561A01B
-	var l3AC52CAF_0;l3AC52CAF_0 = keyboard_check_pressed(vk_space);if (l3AC52CAF_0){	/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 37E17033
-		/// @DnDParent : 3AC52CAF
-		/// @DnDArgument : "expr" "-jump_speed"
-		/// @DnDArgument : "var" "move_y"
-		move_y = -jump_speed;}}
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 37E17033
+	/// @DnDDisabled : 1
+	/// @DnDParent : 3AC52CAF
+	/// @DnDArgument : "expr" "-jump_speed"
+	/// @DnDArgument : "var" "move_y"}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
